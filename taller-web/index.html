@@ -175,7 +175,7 @@
 
         <!-- Identidad visual del negocio -->
         <a href="#inicio" class="logo" aria-label="Ir al inicio">
-            <!-- TODO: Sustituir por el logotipo real -->
+            <!-- Sustituir por el logotipo real -->
             <img
                 src="assets/images/logo.svg"
                 alt="Logotipo del taller"
@@ -183,12 +183,11 @@
         </a>
 
         <!-- Navegación principal -->
-        <nav aria-label="Navegación principal">
+        <nav id="main-navigation" aria-label="Navegación principal">
 
             <!-- TODO: Implementar menú responsive y menú hamburguesa -->
 
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#opiniones">Opiniones</a></li>
                 <li><a href="#citas">Solicitar cita</a></li>
@@ -200,6 +199,17 @@
         <!-- TODO: Configurar el teléfono real del establecimiento -->
         <a href="tel:+34000000000" class="header-phone">
             Llamar ahora
+        </a>
+
+                <!-- TODO: Configurar el número real de WhatsApp -->
+        <a
+            href="https://wa.me/34000000000"
+            class="header-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contactar con el taller por WhatsApp"
+        >
+            WhatsApp
         </a>
 
     </header>
@@ -217,6 +227,8 @@
             <img
                 src="assets/images/hero.webp"
                 alt="Vehículo en las instalaciones del taller"
+                fetchpriority="high"
+                decoding="async"
             >
 
             <div class="hero-content">
@@ -224,32 +236,20 @@
                 <!-- TODO: Sustituir por el nombre comercial -->
                 <h1 id="hero-title">
                     TEXACO
+                    <span>Taller mecánico de confianza</span>
                 </h1>
 
                 <!-- TODO: Crear un eslogan que represente al negocio -->
                 <p>
-                    Tu taller de confianza para el mantenimiento
-                    y reparación de tu vehículo.
+                    Servicio de mecánica y mantenimiento de vehículos
+                    en La Pobla de Vallbona.
+                    Trabajamos para ofrecerte soluciones cercanas y de confianza.
                 </p>
-
-                <!-- Acciones principales -->
-                <div class="hero-actions">
-
-                    <a href="#citas">
-                        Solicitar una cita
-                    </a>
-
-                    <!-- TODO: Sustituir por el teléfono real -->
-                    <a href="tel:+34000000000">
-                        Llamar ahora
-                    </a>
-
-                </div>
-
             </div>
 
         </section>
 
+    </main>
 
         <!-- ==========================================
              6. SERVICIOS DEL TALLER
@@ -276,90 +276,138 @@
 
                 <article class="service-card">
 
-                    <!-- TODO: Añadir icono del servicio -->
-                    <div class="service-icon"></div>
+                    <img
+                        src="assets/images/image1.webp"
+                        alt="Trabajo de mecánica general en un vehículo"
+                        loading="lazy"
+                        decoding="async"
+                    >
 
-                    <h3>Mecánica general</h3>
+                    <h3>Mantenimiento general</h3>
 
                     <p>
-                        Mantenimiento y reparación de los principales
-                        componentes mecánicos del vehículo.
+                        Mantenimiento periódico y reparación de los
+                        principales componentes mecánicos de tu vehículo.
                     </p>
+
+                    <a href="#citas" class="service-link">
+                        Solicitar información
+                    </a>
 
                 </article>
 
 
                 <article class="service-card">
 
-                    <div class="service-icon"></div>
+                    <img
+                        src="assets/images/image2.webp"
+                        alt="Reparación de motor de un vehículo"
+                        loading="lazy"
+                        decoding="async"
+                    >
 
                     <h3>Reparación de motores</h3>
 
                     <p>
-                        Diagnóstico y reparación de averías
-                        relacionadas con el motor.
+                        Diagnóstico de averías y trabajos de reparación
+                        relacionados con el motor.
                     </p>
+
+                    <a href="#citas" class="service-link">
+                        Solicitar información
+                    </a>
 
                 </article>
 
 
                 <article class="service-card">
 
-                    <div class="service-icon"></div>
+                    <img
+                        src="assets/images/image3.webp"
+                        alt="Revisión del sistema eléctrico de un vehículo"
+                        loading="lazy"
+                        decoding="async"
+                    >
 
                     <h3>Baterías y electricidad</h3>
 
                     <p>
-                        Comprobación, mantenimiento y sustitución
-                        de baterías y componentes eléctricos.
+                        Revisión del sistema eléctrico, comprobación
+                        de baterías y sustitución cuando sea necesario.
                     </p>
+
+                    <a href="#citas" class="service-link">
+                        Solicitar información
+                    </a>
 
                 </article>
 
 
                 <article class="service-card">
 
-                    <div class="service-icon"></div>
+                    <img
+                        src="assets/images/image4.webp"
+                        alt="Trabajo de reparación de carrocería"
+                        loading="lazy"
+                        decoding="async"
+                    >
 
                     <h3>Chapa y pintura</h3>
 
                     <p>
-                        Reparación de carrocería y trabajos
-                        de pintura para recuperar el aspecto del vehículo.
+                        Reparación de daños en la carrocería
+                        y trabajos de pintura.
                     </p>
+
+                    <a href="#citas" class="service-link">
+                        Solicitar información
+                    </a>
 
                 </article>
 
 
                 <article class="service-card">
 
-                    <div class="service-icon"></div>
+                    <img
+                        src="assets/images/image5.webp"
+                        alt="Revisión del sistema de frenado"
+                        loading="lazy"
+                        decoding="async"
+                    >
 
                     <h3>Sistemas de frenado</h3>
 
                     <p>
-                        Revisión y reparación de frenos para garantizar
-                        la seguridad del vehículo.
+                        Revisión y mantenimiento de discos, pastillas
+                        y componentes del sistema de frenado.
                     </p>
+
+                    <a href="#citas" class="service-link">
+                        Solicitar información
+                    </a>
 
                 </article>
 
 
                 <article class="service-card">
 
-                    <div class="service-icon"></div>
+                    <img
+                        src="assets/images/image6.webp"
+                        alt="Diagnosis electrónica de un vehículo"
+                        loading="lazy"
+                        decoding="async"
+                    >
 
                     <h3>Diagnosis electrónica</h3>
 
                     <p>
-                        Detección de averías mediante equipos
-                        de diagnóstico electrónico.
-
-                        Trabajamos con diferentes marcas
-
-                        Atendemos vehículos de distintos fabricantes.
-
+                        Detección y análisis de averías mediante
+                        equipos de diagnosis electrónica.
                     </p>
+
+                    <a href="#citas" class="service-link">
+                        Solicitar información
+                    </a>
 
                 </article>
 
@@ -370,7 +418,7 @@
         </section>
 
         <!-- ==========================================
-             8. OPINIONES DE LOS CLIENTES
+             7. OPINIONES DE LOS CLIENTES
              ========================================== -->
 
         <section id="opiniones" aria-labelledby="reviews-title">
@@ -822,15 +870,11 @@
                      Sustituir la URL de ejemplo por la URL de inserción real.
                 -->
 
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!3m2!1ses!2ses!4v1794998204454!5m2!1ses!2ses!6m8!1m7!1skLzKW3u_NO7fmYr2d2mHLQ!2m2!1d39.58902827396617!2d-0.542580124203534!3f321.73837661195387!4f3.1657804850293445!5f3.325193203789971" 
-                    width="600" 
-                    height="450" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="strict-origin-when-cross-origin">
-                </iframe>
+                <!--<iframe 
+                
+                Aquí copiar el iframe de maps
+            
+                </iframe> -->
 
             </div>
 
@@ -909,7 +953,6 @@
                 <h3>Enlaces rápidos</h3>
 
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#opiniones">Opiniones</a></li>
                     <li><a href="#citas">Solicitar cita</a></li>
@@ -924,9 +967,9 @@
                 <h3>Contacto</h3>
 
                 <!-- TODO: Sustituir por información real -->
-                <p>632539413</p>
+                <p>tel:+34000000000</p>
                 <p>info@taller.com</p>
-                <p>Carrer del Poeta Llorente, 187, 46185 La Pobla de Vallbona, Valencia</p>
+                <p>Direccion</p>
 
             </div>
 

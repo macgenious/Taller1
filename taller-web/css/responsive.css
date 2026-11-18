@@ -1,0 +1,327 @@
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+
+/* ==========================================
+   TABLETS
+   Hasta 1024px
+   ========================================== */
+
+@media (max-width: 1024px) {
+
+
+    /* HEADER */
+
+    #header {
+
+        padding: 15px 3%;
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    #main-navigation ul {
+
+        gap: 18px;
+
+    }
+
+
+    #main-navigation a {
+
+        font-size: 0.9rem;
+
+    }
+
+
+    .logo img {
+
+        width: 120px;
+
+    }
+
+
+    /* HERO */
+
+    #inicio {
+
+        min-height: 550px;
+
+        padding: 70px 7%;
+
+    }
+
+
+    /* SERVICIOS */
+
+    .services-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 25px;
+
+    }
+
+}
+
+
+/* ==========================================
+   MÓVILES
+   Hasta 767px
+   ========================================== */
+
+@media (max-width: 767px) {
+
+
+    /* HEADER */
+
+    #header {
+
+        justify-content: center;
+
+        padding: 15px 20px;
+
+        gap: 15px;
+
+    }
+
+
+    .logo img {
+
+        width: 115px;
+
+    }
+
+
+    #main-navigation {
+
+        width: 100%;
+
+        justify-content: center;
+
+        order: 3;
+
+    }
+
+
+    #main-navigation ul {
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px 20px;
+
+    }
+
+
+    #main-navigation a {
+
+        font-size: 0.85rem;
+
+    }
+
+
+    .header-phone,
+    .header-whatsapp {
+
+        padding: 9px 12px;
+
+        font-size: 0.8rem;
+
+    }
+
+
+    /* HERO */
+
+    #inicio {
+
+        min-height: 550px;
+
+        padding: 60px 25px;
+
+        justify-content: center;
+
+        text-align: center;
+
+    }
+
+
+    .hero-content {
+
+        width: 100%;
+
+    }
+
+
+    .hero-content h1 {
+
+        align-items: center;
+
+        font-size: clamp(2.8rem, 12vw, 4rem);
+
+    }
+
+
+    .hero-content h1 span {
+
+        font-size: 1.3rem;
+
+    }
+
+
+    .hero-content p {
+
+        font-size: 1rem;
+
+        margin-top: 20px;
+
+        margin-bottom: 25px;
+
+    }
+
+
+    .hero-actions {
+
+        justify-content: center;
+
+        gap: 12px;
+
+    }
+
+
+    /* SERVICIOS */
+
+    #servicios {
+
+        padding: 60px 20px;
+
+    }
+
+
+    .section-heading {
+
+        margin-bottom: 35px;
+
+    }
+
+
+    .services-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        max-width: 450px;
+
+    }
+
+
+    .service-card img {
+
+        height: 230px;
+
+    }
+
+
+}
+
+
+/* ==========================================
+   MÓVILES PEQUEÑOS
+   Hasta 480px
+   ========================================== */
+
+@media (max-width: 480px) {
+
+
+    /* HEADER */
+
+    #header {
+
+        gap: 12px;
+
+    }
+
+
+    .header-phone,
+    .header-whatsapp {
+
+        padding: 8px 10px;
+
+        font-size: 0.75rem;
+
+    }
+
+
+    #main-navigation ul {
+
+        gap: 10px 15px;
+
+    }
+
+
+    /* HERO */
+
+    #inicio {
+
+        min-height: 500px;
+
+        padding: 50px 18px;
+
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 2.8rem;
+
+    }
+
+
+    .hero-content h1 span {
+
+        font-size: 1.1rem;
+
+    }
+
+
+    .hero-actions {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .hero-actions a {
+
+        width: 100%;
+
+    }
+
+
+    /* SERVICIOS */
+
+    .service-card h3 {
+
+        font-size: 1.15rem;
+
+    }
+
+
+    .service-card img {
+
+        height: 200px;
+
+    }
+
+}

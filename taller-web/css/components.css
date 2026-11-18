@@ -1,0 +1,91 @@
+
+/* ==========================================
+   COMPONENTES REUTILIZABLES
+   ========================================== */
+
+
+/* ==========================================
+   BOTONES GENERALES
+   ========================================== */
+
+.btn-primary,
+.btn-secondary {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    font-size: 0.95rem;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+
+}
+
+
+/* Botón principal */
+
+.btn-primary {
+
+    background-color: var(--color-primary);
+
+    border: 2px solid var(--color-primary);
+
+    color: var(--color-white);
+
+}
+
+
+.btn-primary:hover {
+
+    background-color: var(--color-white);
+
+    color: var(--color-primary);
+
+}
+
+
+/* Botón secundario */
+
+.btn-secondary {
+
+    background-color: transparent;
+
+    border: 2px solid var(--color-white);
+
+    color: var(--color-white);
+
+}
+
+
+.btn-secondary:hover {
+
+    background-color: var(--color-white);
+
+    color: var(--color-primary);
+
+}
+
+
+/* Interacción mediante teclado */
+
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible,
+.service-link:focus-visible {
+
+    outline: 3px solid var(--color-primary);
+
+    outline-offset: 4px;
+
+}
