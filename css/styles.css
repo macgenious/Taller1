@@ -309,6 +309,26 @@ main {
 
 }
 
+/* ==========================================
+   HEADER DINÁMICO (HIDE ON SCROLL)
+   ========================================== */
+
+#header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    /* Animación de entrada y salida */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ocultar el header */
+#header.header-hidden {
+    transform: translateY(-100%);
+}
+
 
 
 
