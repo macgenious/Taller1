@@ -606,3 +606,77 @@
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   FOOTER RESPONSIVE
+   ========================================== */
+
+
+/* TABLETS */
+
+@media (max-width: 1024px) {
+
+    .footer-content {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 40px;
+
+    }
+
+}
+
+
+/* MÓVILES */
+
+@media (max-width: 767px) {
+
+    .footer-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 45px 25px;
+
+    }
+
+
+    .footer-brand p {
+
+        max-width: 100%;
+
+    }
+
+
+    .footer-legal {
+
+        flex-direction: column;
+
+        gap: 18px;
+
+        text-align: center;
+
+    }
+
+
+    .footer-copyright {
+
+        padding: 20px 15px;
+
+    }
+
+}
