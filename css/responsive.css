@@ -67,6 +67,49 @@
 
     }
 
+    
+    /* OPINIONES */
+
+    #opiniones {
+
+        padding: 70px 30px;
+
+    }
+
+
+    /* CONTACTO */
+
+    #contacto {
+
+        padding: 70px 30px;
+
+    }
+
+
+    .contact-container {
+
+        gap: 20px;
+
+    }
+
+
+    .contact-information,
+    .business-hours {
+
+        padding: 25px;
+
+    }
+
+
+    .business-hours li {
+
+        font-size: 0.85rem;
+
+        gap: 10px;
+
+    }
+
+
 }
 
 
@@ -231,6 +274,75 @@
     }
 
 
+    /* OPINIONES */
+
+    #opiniones {
+
+        padding: 60px 20px;
+
+    }
+
+
+    .reviews-link a {
+
+        width: 100%;
+
+        max-width: 350px;
+
+    }
+
+
+    /* CONTACTO */
+
+    #contacto {
+
+        padding: 60px 20px;
+
+    }
+
+
+    /* One column instead of two */
+
+    .contact-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+
+    /* Contact cards */
+
+    .contact-information,
+    .business-hours {
+
+        padding: 25px;
+
+    }
+
+
+    /* Location */
+
+    .map-container {
+
+        margin-top: 25px;
+
+        padding: 25px;
+
+    }
+
+
+    .map-container a {
+
+        width: 100%;
+
+        max-width: 350px;
+
+    }
+
+
+
 }
 
 
@@ -323,5 +435,96 @@
         height: 200px;
 
     }
+
+
+    /* OPINIONES */
+
+    #opiniones {
+
+        padding: 50px 18px;
+
+    }
+
+
+    .reviews-link a {
+
+        font-size: 0.9rem;
+
+        padding: 13px 20px;
+
+    }
+
+
+    /* CONTACTO */
+
+    #contacto {
+
+        padding: 50px 18px;
+
+    }
+
+
+    .contact-information,
+    .business-hours {
+
+        padding: 20px;
+
+    }
+
+
+    .contact-information h3,
+    .business-hours h3 {
+
+        font-size: 1.2rem;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .contact-information {
+
+        gap: 20px;
+
+    }
+
+
+    /* Opening hours */
+
+    .business-hours li {
+
+        align-items: flex-start;
+
+        font-size: 0.8rem;
+
+        gap: 8px;
+
+    }
+
+
+    .business-hours li span:last-child {
+
+        max-width: 65%;
+
+    }
+
+
+    /* Location */
+
+    .map-container {
+
+        padding: 20px;
+
+    }
+
+
+    .map-container a {
+
+        font-size: 0.9rem;
+
+        padding: 12px 20px;
+
+    }
+
 
 }

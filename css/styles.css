@@ -612,3 +612,452 @@ main {
     transform: scale(1.04);
 
 }
+
+
+/* ==========================================
+   SECCIÓN DE OPINIONES
+   ========================================== */
+
+
+/* ==========================================
+   7. OPINIONES DE LOS CLIENTES
+   ========================================== */
+
+#opiniones {
+
+    padding: var(--section-padding);
+
+    background-color: var(--color-background);
+
+}
+
+
+/* Contenedor del enlace */
+
+.reviews-link {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+}
+
+
+/* Botón para consultar opiniones */
+
+.reviews-link a {
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 50px;
+
+    padding: 14px 35px;
+
+    background-color: var(--color-primary);
+
+    color: var(--color-white);
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    border: 2px solid var(--color-primary);
+
+    transition: var(--transition);
+
+}
+
+
+/* Efecto hover */
+
+.reviews-link a:hover {
+
+    background-color: transparent;
+
+    color: var(--color-primary);
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-card);
+
+}
+
+
+/* Efecto al pulsar */
+
+.reviews-link a:active {
+
+    transform: translateY(0);
+
+}
+
+
+/* Accesibilidad: navegación mediante teclado */
+
+.reviews-link a:focus-visible {
+
+    outline: 3px solid var(--color-text);
+
+    outline-offset: 4px;
+
+}
+
+
+
+/* ==========================================
+   SECCIÓN DE SOLICITUD DE CITA
+   ========================================== */
+
+
+
+/* ==========================================
+   SECCIÓN DE HORARIOS Y UBICACIÓN
+   ========================================== */
+
+#contacto {
+
+    padding: var(--section-padding);
+
+    background-color: var(--color-background-alt);
+
+}
+
+
+/* ==========================================
+   CONTENEDOR PRINCIPAL
+   ========================================== */
+
+.contact-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 30px;
+
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+}
+
+
+/* ==========================================
+   TARJETAS DE CONTACTO Y HORARIOS
+   ========================================== */
+
+.contact-information,
+.business-hours {
+
+    padding: 35px;
+
+    background-color: var(--color-white);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow-card);
+
+}
+
+
+/* Títulos de las tarjetas */
+
+.contact-information h3,
+.business-hours h3 {
+
+    font-size: 1.4rem;
+
+    font-weight: 800;
+
+    margin-bottom: 30px;
+
+    padding-bottom: 15px;
+
+    border-bottom: 2px solid var(--color-primary);
+
+}
+
+
+/* ==========================================
+   INFORMACIÓN DE CONTACTO
+   ========================================== */
+
+.contact-information {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+
+.contact-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+}
+
+
+/* Títulos de cada dato de contacto */
+
+.contact-item h4 {
+
+    font-size: 0.95rem;
+
+    font-weight: 700;
+
+    color: var(--color-text);
+
+}
+
+
+/* Dirección */
+
+.contact-item address {
+
+    font-style: normal;
+
+    line-height: 1.6;
+
+}
+
+
+.contact-item address p {
+
+    color: #555555;
+
+    line-height: 1.6;
+
+}
+
+
+/* Enlaces de contacto */
+
+.contact-item a {
+
+    width: fit-content;
+
+    color: var(--color-text);
+
+    font-size: 0.95rem;
+
+    text-decoration: none;
+
+    transition: var(--transition);
+
+}
+
+
+.contact-item a:hover {
+
+    color: var(--color-primary);
+
+}
+
+
+/* Accesibilidad de los enlaces */
+
+.contact-item a:focus-visible {
+
+    outline: 2px solid var(--color-primary);
+
+    outline-offset: 4px;
+
+    border-radius: 2px;
+
+}
+
+
+/* ==========================================
+   HORARIOS DE ATENCIÓN
+   ========================================== */
+
+.business-hours ul {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0;
+
+    list-style: none;
+
+}
+
+
+.business-hours li {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid var(--color-border);
+
+    font-size: 0.9rem;
+
+}
+
+
+/* Día de la semana */
+
+.business-hours li span:first-child {
+
+    font-weight: 700;
+
+    color: var(--color-text);
+
+    flex-shrink: 0;
+
+}
+
+
+/* Horario */
+
+.business-hours li span:last-child {
+
+    color: #555555;
+
+    text-align: right;
+
+    line-height: 1.5;
+
+}
+
+
+/* Último elemento de la lista */
+
+.business-hours li:last-child {
+
+    border-bottom: none;
+
+}
+
+
+/* ==========================================
+   UBICACIÓN Y GOOGLE MAPS
+   ========================================== */
+
+.map-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    max-width: var(--container-width);
+
+    margin: 35px auto 0;
+
+    padding: 35px;
+
+    background-color: var(--color-white);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow-card);
+
+}
+
+
+/* Enlace para llegar al establecimiento */
+
+.map-container a {
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 50px;
+
+    padding: 14px 35px;
+
+    background-color: var(--color-primary);
+
+    color: var(--color-white);
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    border: 2px solid var(--color-primary);
+
+    border-radius: 6px;
+
+    transition: var(--transition);
+
+}
+
+
+/* Efecto hover */
+
+.map-container a:hover {
+
+    background-color: transparent;
+
+    color: var(--color-primary);
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-card);
+
+}
+
+
+/* Accesibilidad */
+
+.map-container a:focus-visible {
+
+    outline: 3px solid var(--color-text);
+
+    outline-offset: 4px;
+
+}
+
+
+/* Efecto al pulsar */
+
+.map-container a:active {
+
+    transform: translateY(0);
+
+}
+
+
+/* ==========================================
+   FOOTER Y NAVEGACIÓN
+   ========================================== */
