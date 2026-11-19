@@ -1059,5 +1059,110 @@ main {
 
 
 /* ==========================================
+   SOLICITUD DE CITAS
+   ========================================== */
+
+#citas {
+    padding: var(--section-padding);
+    background-color: var(--color-background-alt);
+}
+
+.appointment-services {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.appointment-service {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+
+    padding: 30px;
+
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+
+    box-shadow: var(--shadow-card);
+    transition: var(--transition);
+}
+
+.appointment-service:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.appointment-service h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.appointment-service p {
+    color: #555555;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.service-duration {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 7px 12px;
+
+    background-color: var(--color-background-alt);
+    border-radius: 5px;
+
+    color: var(--color-text);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.appointment-service .btn-primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 48px;
+
+    margin-top: auto;
+    padding: 12px 18px;
+
+    background-color: #C00000;
+    color: var(--color-white);
+
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+
+    border: 2px solid #C00000;
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.appointment-service .btn-primary:hover {
+    background-color: transparent;
+    color: #C00000;
+    transform: translateY(-2px);
+}
+
+.appointment-service .btn-primary:focus-visible {
+    outline: 3px solid var(--color-text);
+    outline-offset: 4px;
+}
+
+
+
+
+/* ==========================================
    FOOTER Y NAVEGACIÓN
    ========================================== */

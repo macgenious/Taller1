@@ -461,203 +461,112 @@
 
 
         <!-- ==========================================
-             9. SOLICITUD DE CITAS
-             ========================================== -->
+            9. RESERVA DE CITAS
+            ========================================== -->
 
         <section id="citas" aria-labelledby="appointment-title">
 
             <div class="section-heading">
 
                 <h2 id="appointment-title">
-                    Solicita tu cita
+                    Reserva tu cita
                 </h2>
 
                 <p>
-                    Cuéntanos qué necesita tu vehículo y
-                    nos pondremos en contacto contigo.
+                    Selecciona el servicio que necesitas y
+                    encuentra el momento que mejor te convenga.
                 </p>
 
             </div>
 
-            <!-- TODO:
-                 Implementar envío del formulario mediante WhatsApp
-                 o integrar un servicio externo como Formspree.
+            <div class="appointment-services">
 
-                 IMPORTANTE:
-                 En esta primera versión, las solicitudes NO serán
-                 reservas confirmadas automáticamente.
-            -->
+                <!-- SERVICIO 1 -->
 
-            <form id="appointment-form">
+                <article class="appointment-service">
 
-                <div class="form-group">
+                    <h3>Revisión de vehículo</h3>
 
-                    <label for="client-name">
-                        Nombre y apellidos
-                    </label>
+                    <p>
+                        Inspección visual rápida del vehículo y su condición.
+                        Incluye revisión de discos de freno y detección
+                        de sonidos anormales del motor.
+                    </p>
 
-                    <input
-                        type="text"
-                        id="client-name"
-                        name="nombre"
-                        placeholder="Introduce tu nombre"
-                        autocomplete="name"
-                        required
+                    <span class="service-duration">
+                        10 minutos
+                    </span>
+
+                    <a
+                        href="https://cal.com/alejandro-vasile-9wdxys/10min"
+                        class="btn-primary js-booking-trigger"
+                        data-booking-url="alejandro-vasile-9wdxys/10min"
+                        target="_blank"
                     >
+                        Reservar revisión
+                    </a>
 
-                </div>
+                </article>
 
 
-                <div class="form-group">
+                <!-- SERVICIO 2 -->
 
-                    <label for="client-phone">
-                        Número de teléfono
-                    </label>
+                <article class="appointment-service">
 
-                    <input
-                        type="tel"
-                        id="client-phone"
-                        name="telefono"
-                        placeholder="600 000 000"
-                        autocomplete="tel"
-                        required
+                    <h3>Recambio de faros</h3>
+
+                    <p>
+                        Sustitución de faros por avería o daños
+                        ocasionados por golpes.
+                    </p>
+
+                    <span class="service-duration">
+                        1 hora
+                    </span>
+
+                    <a
+                        href="https://cal.com/alejandro-vasile-9wdxys/recambio-faros"
+                        class="btn-primary js-booking-trigger"
+                        data-booking-url="alejandro-vasile-9wdxys/recambio-faros"
+                        target="_blank"
                     >
+                        Reservar recambio
+                    </a>
 
-                </div>
+                </article>
 
 
-                <div class="form-group">
+                <!-- SERVICIO 3 -->
 
-                    <label for="vehicle">
-                        Marca y modelo del vehículo
-                    </label>
+                <article class="appointment-service">
 
-                    <input
-                        type="text"
-                        id="vehicle"
-                        name="vehiculo"
-                        placeholder="Ej. Seat León"
+                    <h3>Revisión completa del vehículo</h3>
+
+                    <p>
+                        Revisión exhaustiva de 20 puntos
+                        para comprobar el estado general del vehículo.
+                    </p>
+
+                    <span class="service-duration">
+                        1 hora
+                    </span>
+
+                    <a
+                        href="https://cal.com/alejandro-vasile-9wdxys/30min"
+                        class="btn-primary js-booking-trigger"
+                        data-booking-url="alejandro-vasile-9wdxys/30min"
+                        target="_blank"
                     >
+                        Reservar revisión completa
+                    </a>
 
-                </div>
+                </article>
 
+            </div>
 
-                <div class="form-group">
-
-                    <label for="service">
-                        Servicio solicitado
-                    </label>
-
-                    <select
-                        id="service"
-                        name="servicio"
-                        required
-                    >
-
-                        <option value="" disabled selected>
-                            Selecciona un servicio
-                        </option>
-
-                        <option value="mecanica">
-                            Mecánica general
-                        </option>
-
-                        <option value="motor">
-                            Reparación de motores
-                        </option>
-
-                        <option value="bateria">
-                            Baterías y electricidad
-                        </option>
-
-                        <option value="pintura">
-                            Chapa y pintura
-                        </option>
-
-                        <option value="frenos">
-                            Sistemas de frenado
-                        </option>
-
-                        <option value="diagnosis">
-                            Diagnosis electrónica
-                        </option>
-
-                        <option value="otros">
-                            Otros servicios
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="appointment-date">
-                        Fecha preferida
-                    </label>
-
-                    <input
-                        type="date"
-                        id="appointment-date"
-                        name="fecha"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="appointment-message">
-                        Descripción del problema
-                    </label>
-
-                    <textarea
-                        id="appointment-message"
-                        name="descripcion"
-                        rows="5"
-                        placeholder="Describe brevemente qué le ocurre a tu vehículo..."
-                    ></textarea>
-
-                </div>
-
-
-                <!-- TODO: Incorporar información de privacidad
-                     y el mecanismo de consentimiento correspondiente -->
-
-                <div class="form-group">
-
-                    <label for="privacy-consent">
-
-                        <input
-                            type="checkbox"
-                            id="privacy-consent"
-                            name="privacidad"
-                            required
-                        >
-
-                        He leído la política de privacidad y acepto
-                        el tratamiento de mis datos para gestionar
-                        esta solicitud.
-
-                    </label>
-
-                </div>
-
-
-                <button type="submit">
-                    Enviar solicitud de cita
-                </button>
-
-                <!-- TODO: Mostrar aquí mensajes de éxito o error
-                     después de implementar el envío del formulario -->
-
-                <div id="form-feedback" aria-live="polite"></div>
-
-            </form>
 
         </section>
+
 
 
         
